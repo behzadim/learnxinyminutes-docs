@@ -2,7 +2,7 @@
 name: Go
 category: language
 language: Go
-filename: learngo.go
+filename: learngo-fa.go
 contributors:
     - ["Sonia Keys", "https://github.com/soniakeys"]
     - ["Christopher Bess", "https://github.com/cbess"]
@@ -12,8 +12,11 @@ contributors:
     - ["Alexej Friesen", "https://github.com/heyalexej"]
     - ["Clayton Walker", "https://github.com/cwalk"]
     - ["Leonid Shevtsov", "https://github.com/leonid-shevtsov"]
+translators:
+    - ["Maryam Behzadi", "https://github.com/behzadim"]
+lang: fa-ir
 ---
-
+متن فارسی.
 Go was created out of the need to get work done. It's not the latest trend
 in computer science, but it is the newest fastest way to solve real-world
 problems.
@@ -142,7 +145,7 @@ can include line breaks.` // Same string type.
 	file, _ := os.Create("output.txt")
 	fmt.Fprint(file, "This is how you write to a file, by the way")
 	file.Close()
-	
+
 	// Output of course counts as using a variable.
 	fmt.Println(s, c, a4, s3, d2, m)
 
