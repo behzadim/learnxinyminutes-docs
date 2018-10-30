@@ -427,6 +427,12 @@ func requestServer() {
 }
 ```
 
+<div dir="rtl">
+## توضیحات بیشتر
+
+
+</div>
+
 ## Further Reading
 
 The root of all things Go is the [official Go web site](http://golang.org/).
