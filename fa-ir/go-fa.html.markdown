@@ -16,7 +16,11 @@ translators:
     - ["Maryam Behzadi", "https://github.com/behzadim"]
 lang: fa-ir
 ---
+<div dir="rtl">
 متن فارسی.
+تست فارسی و English.
+</div>
+
 Go was created out of the need to get work done. It's not the latest trend
 in computer science, but it is the newest fastest way to solve real-world
 problems.
