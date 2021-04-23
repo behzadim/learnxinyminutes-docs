@@ -13,6 +13,9 @@ editor designed for speed and increased productivity, and is ubiquitous in most
 unix-based systems. It has numerous keybindings for speedy navigation to
 specific points in the file, and for fast editing.
 
+`vimtutor` is a an excellent application that teaches you how to use `Vim`. It comes with the vim package during installation. You should be able to just run "vimtutor" on the command line to open this tutor. It will guide you through all the major features in `vim`.
+
+
 ## Basics of navigating Vim
 
 ```
@@ -21,8 +24,10 @@ specific points in the file, and for fast editing.
     :q               # Quit vim
     :w               # Save current file
     :wq              # Save file and quit vim
+    ZZ               # Save file and quit vim
     :q!              # Quit vim without saving file
                      # ! *forces* :q to execute, hence quiting vim without saving
+    ZQ               # Quit vim without saving file
     :x               # Save file and quit vim, shorter version of :wq
 
     u                # Undo
@@ -32,6 +37,11 @@ specific points in the file, and for fast editing.
     j                # Move down one line
     k                # Move up one line
     l                # Move right one character
+
+    Ctrl+B 	         # Move back one full screen
+    Ctrl+F 	         # Move forward one full screen
+    Ctrl+D 	         # Move forward 1/2 a screen
+    Ctrl+U           # Move back 1/2 a screen
 
     # Moving within the line
 
@@ -48,6 +58,7 @@ specific points in the file, and for fast editing.
 
     :%s/foo/bar/g    # Change 'foo' to 'bar' on every line in the file
     :s/foo/bar/g     # Change 'foo' to 'bar' on the current line
+    :%s/\n/\r/g      # Replace new line characters with new line characters
 
     # Jumping to characters
 
@@ -87,10 +98,10 @@ that aims to make getting started with vim more approachable!
 
 Vim is based on the concept on **modes**.
 
-Command Mode - vim starts up in this mode, used to navigate and write commands
-Insert Mode  - used to make changes in your file
-Visual Mode  - used to highlight text and do operations to them
-Ex Mode      - used to drop down to the bottom with the ':' prompt to enter commands
+- Command Mode - vim starts up in this mode, used to navigate and write commands
+- Insert Mode  - used to make changes in your file
+- Visual Mode  - used to highlight text and do operations to them
+- Ex Mode      - used to drop down to the bottom with the ':' prompt to enter commands
 
 ```
     i                # Puts vim into insert mode, before the cursor position
@@ -115,9 +126,9 @@ Ex Mode      - used to drop down to the bottom with the ':' prompt to enter comm
 Vim can be thought of as a set of commands in a
 'Verb-Modifier-Noun' format, where:
 
-Verb     - your action
-Modifier - how you're doing your action
-Noun     - the object on which your action acts on
+- Verb     - your action
+- Modifier - how you're doing your action
+- Noun     - the object on which your action acts on
 
 A few important examples of 'Verbs', 'Modifiers', and 'Nouns':
 
@@ -167,6 +178,21 @@ A few important examples of 'Verbs', 'Modifiers', and 'Nouns':
     ddp              # Swap position of consecutive lines, dd then p
     .                # Repeat previous action
     :w !sudo tee %   # Save the current file as root
+    :set syntax=c    # Set syntax highlighting to 'c'
+    :sort            # Sort all lines
+    :sort!           # Sort all lines in reverse
+    :sort u          # Sort all lines and remove duplicates
+    ~                # Toggle letter case of selected text
+    u                # Selected text to lower case
+    U                # Selected text to upper case
+    J                # Join the current line with the next line
+    
+    # Fold text
+    zf               # Create fold from selected text
+    zo               # Open current fold
+    zc               # Close current fold
+    zR               # Open all folds
+    zM               # Close all folds
 ```
 
 ## Macros

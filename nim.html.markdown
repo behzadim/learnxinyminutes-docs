@@ -15,15 +15,9 @@ Nim is efficient, expressive, and elegant.
 # Single-line comments start with a #
 
 #[
-  Multi-line comments begin with a #[
-  ... and end with ]#
-
-They don't care about indentation
-
-  #[
-  and they can be nested
-  ]#
-
+  This is a multiline comment.
+  In Nim, multiline comments can be nested, beginning with #[
+  ... and ending with ]#
 ]#
 
 discard """
@@ -34,7 +28,7 @@ Or for unparsable, broken code
 var                     # Declare (and assign) variables,
   letter: char = 'n'    # with or without type annotations
   lang = "N" & "im"
-  nLength : int = len(lang)
+  nLength: int = len(lang)
   boat: float
   truth: bool = false
 
