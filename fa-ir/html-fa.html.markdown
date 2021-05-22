@@ -8,7 +8,7 @@ translators:
     - ["Hiva zarei" , "https://github.com/hivazarei"]
 ---
 
-Html مخفف كلمه ي hyper text markup language مي باشد.
+<p dir="rtl">Html مخفف كلمه ي hyper text markup language مي باشد.</p>
 
 .يك زبان نشانه گيري است كه با استفاده از كد نويسي ميتوانيم متن و داده هاي مختلف را با استفاده از آن نمايش دهيم
 
